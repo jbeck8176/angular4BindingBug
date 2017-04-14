@@ -1,0 +1,10 @@
+<p>
+	parent-component<br/>
+	<br/>
+	The complex object was initialized by the parent component as dataObject: IDataObject = &#123; id: 3, someProperty: 'parent' &#125;<br/>
+	<br/>
+	complex object: {{dataObject | json}}<br/>
+	primitive  data type: {{stringObject | json}}<br/>
+	<br/>
+	<app-child-component [dataObjectInput]="dataObject" [stringObjectInput]="stringObject"></app-child-component>
+</p>
